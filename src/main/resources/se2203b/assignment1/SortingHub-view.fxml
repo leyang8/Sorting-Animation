@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se2203b.assignment1.SortingHubController">
+   <children>
+      <Label layoutX="39.0" layoutY="332.0" text="Algorithm" />
+      <Label layoutX="293.0" layoutY="333.0" text="Array Size" />
+      <ComboBox fx:id="AlgorithmChoiceBox" layoutX="120.0" layoutY="329.0" prefWidth="150.0" />
+      <Slider fx:id="ArraySizeSlider" blockIncrement="100.0" layoutX="360.0" layoutY="332.0" max="128.0" min="32.0" onDragDetected="#ChangeArraySize" onInputMethodTextChanged="#ChangeArraySize" onMouseClicked="#ChangeArraySize" onMouseDragged="#ChangeArraySize" prefWidth="250.0" />
+      <Button fx:id="SortButton" layoutX="662.0" layoutY="325.0" mnemonicParsing="false" onAction="#StartSorting" text="Sort" />
+      <Button fx:id="ResetButton" layoutX="718.0" layoutY="325.0" mnemonicParsing="false" onAction="#ResetToInitial" text="Reset" />
+      <Label fx:id="SliderValueShownLabel" layoutX="622.0" layoutY="328.0" prefHeight="20.0" prefWidth="40.0" />
+      <Pane fx:id="BarShowingPane" layoutX="42.0" layoutY="35.0" prefHeight="259.0" prefWidth="718.0" style="-fx-border-color: black;"/>
+   </children>
+</AnchorPane>
